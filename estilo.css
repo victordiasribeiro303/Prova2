@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2em;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.galeria figure {
+  width: calc(33.33% - 1em);
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 1em;
+}
