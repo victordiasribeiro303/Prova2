@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contato | Fotografia Criativa</title>
   <link rel="stylesheet" href="estilo.css" />
   <script src="js/validacao.js" defer></script>
@@ -11,7 +12,7 @@
     <h1>Contato</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
+        <li><a href="inicio.html">Início</a></li>
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="galeria.html">Galeria</a></li>
         <li><a href="contato.html">Contato</a></li>
@@ -20,14 +21,27 @@
   </header>
 
   <main>
-    <form id="form-contato">
-      <label>Nome:<br><input type="text" name="nome" required></label><br>
-      <label>Email:<br><input type="email" name="email" required></label><br>
-      <label>Assunto:<br><input type="text" name="assunto" required></label><br>
-      <label>Mensagem:<br><textarea name="mensagem" minlength="20" required></textarea></label><br>
-      <button type="submit">Enviar</button>
-      <p id="feedback"></p>
-    </form>
+    <div class="form-container">
+      <h2>Entre em Contato</h2>
+      <p>Preencha o formulário abaixo e entraremos em contato em breve.</p>
+      
+      <form id="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+        
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required placeholder="Sobre o que deseja falar?">
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" minlength="20" required placeholder="Digite sua mensagem aqui..."></textarea>
+        
+        <button type="submit">Enviar Mensagem</button>
+        <p id="feedback"></p>
+      </form>
+    </div>
   </main>
 
   <footer>
